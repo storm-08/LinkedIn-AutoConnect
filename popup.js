@@ -55,14 +55,6 @@ function startConnecting() {
                   shouldStopConnecting = true;
                 }
               });
-              function updateProgressBar() {
-                // Calculate the progress percentage
-                const totalProfiles = document.querySelectorAll(".reusable-search__result-container").length;
-                const progressPercentage = (connectionSent / totalProfiles) * 100;
-            
-                // Update the counter and the circular progress bar
-                progressBar.style.background = `conic-gradient(#00ff00 ${progressPercentage}%, #ddd ${progressPercentage}%)`;
-              }
               function sendRequest() {
                 if (shouldStopConnecting || index >= profiles.length) {
                   console.log("Finished sending connection requests.");
@@ -93,7 +85,6 @@ function startConnecting() {
                       console.log(`Connection request sent to profile ${index + 1}`);
                       connectionSent++;
                       chrome.runtime.sendMessage({type : 'incrementCounter', count: connectionSent});
-                      updateProgressBar();
                     }
                   }, 1000);
                 } else {
