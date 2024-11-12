@@ -57,7 +57,7 @@ body {
 
   /* Start button style */
   .start-button {
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -74,7 +74,7 @@ body {
   
   /* Stop button style */
   .stop-button {
-    background-color: #ff6f61; 
+    background-color: #ff6f61;
     color: #fff;
     border: none;
     border-radius: 5px;

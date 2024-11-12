@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("toggleButton");
   const connectionCounter = document.getElementById("counter");
 
-  toggleButton.disabled = true;
-  toggleButton.classList.add("disabled");
-
   toggleButton.addEventListener("click", () => {
     isConnecting = !isConnecting;
 
@@ -92,7 +89,7 @@ function startConnecting() {
                 }
             
                 index++;
-                const delay = 5000; // Random delay between 5 and 10 seconds
+                const delay = 5000; // Delay of 5 seconds
                 setTimeout(sendRequest, delay);
               }
               sendRequest();
@@ -110,7 +107,7 @@ function startConnecting() {
 }
 
 function stopConnecting() {
-  // Send a message to the content script to stop the connection process
+  // Send a message to stop the connection process
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs[0]) {
       chrome.tabs.sendMessage(tabs[0].id, { type: 'stopConnecting' });
