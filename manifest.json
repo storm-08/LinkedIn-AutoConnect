@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Auto Connect",
+    "version": "1.0",
+    "description": "Automatically sends LinkedIn connection requests to people in a search list.",
+    "permissions": ["scripting", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    
+    "icons": {
+      "48": "icon48.png"
+    }
+  }
+  

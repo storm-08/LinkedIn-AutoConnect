@@ -1,0 +1,103 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Popup container styling */
+  .popup-container {
+    width: 230px;
+    background-color: #1c1c2e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+  }
+  
+  /* Header styling */
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f3a4d;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .popup-header p{
+    margin-left: 10px;
+  }
+  /* Content styling */
+  .content p {
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  /* Circular progress styling */
+  .circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1c1c2e;
+    border: 8px solid #fff;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle span {
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  /* Start button style */
+  .start-button {
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Stop button style */
+  .stop-button {
+    background-color: #ff6f61; /* Light red background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .stop-button:hover {
+    background-color: #ff4c4c;
+  }
+  
+  /* Settings button styling */
+  .settings-button {
+    background-color: #4c5a6e;;
+    border: none;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    border-radius: 4px; 
+    color: #aaa;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
